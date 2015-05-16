@@ -9,7 +9,7 @@
 		<Property Name="IOScan.PowerupMode" Type="UInt">0</Property>
 		<Property Name="IOScan.Priority" Type="UInt">9</Property>
 		<Property Name="IOScan.ReportModeConflict" Type="Bool">true</Property>
-		<Property Name="IOScan.StartEngineOnDeploy" Type="Bool">false</Property>
+		<Property Name="IOScan.StartEngineOnDeploy" Type="Bool">true</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.tcp.enabled" Type="Bool">false</Property>
@@ -19,7 +19,30 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Dependencies" Type="Dependencies"/>
+		<Item Name="Controls" Type="Folder">
+			<Item Name="States.ctl" Type="VI" URL="../Controls/States.ctl"/>
+		</Item>
+		<Item Name="Test" Type="Folder">
+			<Item Name="My Open 2.vi" Type="VI" URL="../../Test/My Open 2.vi"/>
+			<Item Name="My Open.vi" Type="VI" URL="../../Test/My Open.vi"/>
+		</Item>
+		<Item Name="Axis 1" Type="Motion Axis">
+			<Property Name="axis.class:0" Type="Int">10551365</Property>
+			<Property Name="axis.SMVersion" Type="Int">201310</Property>
+			<Property Name="deviceID:0" Type="Int">0</Property>
+			<Property Name="resource.type:0" Type="Int">10551297</Property>
+			<Property Name="resourceID:0" Type="Str">{68612547-6633-40F5-B878-9FAAA520ABFC}</Property>
+			<Property Name="softmotionID:0" Type="Str">{C89C22D6-09D8-451c-B54B-BE98A931F881}</Property>
+			<Property Name="vendorID:0" Type="Int">0</Property>
+		</Item>
+		<Item Name="SDI Test Suite - MAIN.vi" Type="VI" URL="../SDI Test Suite - MAIN.vi"/>
+		<Item Name="Dependencies" Type="Dependencies">
+			<Item Name="vi.lib" Type="Folder">
+				<Item Name="nismPluginAxisBaseClass.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Motion/plugins/PluginFramework/nismPluginAxisBase/nismPluginAxisBaseClass.lvclass"/>
+				<Item Name="nismSDIFramework.Binding.ctl" Type="VI" URL="/&lt;vilib&gt;/Motion/plugins/PluginFramework/nismSDIFramework.Binding.ctl"/>
+			</Item>
+			<Item Name="Template SoftMotion Drive Interface Plug-in Class.lvclass" Type="LVClass" URL="/C/Users/mpool/Documents/LabVIEW Data/Untitled Project 3/Template SoftMotion Drive Interface Plug-in Class.lvclass"/>
+		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 </Project>
