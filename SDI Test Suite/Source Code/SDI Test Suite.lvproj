@@ -20,7 +20,14 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Controls" Type="Folder">
+			<Item Name="Open VI Folder Info.ctl" Type="VI" URL="../Controls/Open VI Folder Info.ctl"/>
 			<Item Name="States.ctl" Type="VI" URL="../Controls/States.ctl"/>
+			<Item Name="Test Result.ctl" Type="VI" URL="../Controls/Test Result.ctl"/>
+		</Item>
+		<Item Name="SubVIs" Type="Folder">
+			<Item Name="Check if Axis Selected.vi" Type="VI" URL="../Sub VIs/Check if Axis Selected.vi"/>
+			<Item Name="Check If Open VI Selected.vi" Type="VI" URL="../Sub VIs/Check If Open VI Selected.vi"/>
+			<Item Name="Insert Open VI.vi" Type="VI" URL="../Sub VIs/Insert Open VI.vi"/>
 		</Item>
 		<Item Name="Test" Type="Folder">
 			<Item Name="My Open 2.vi" Type="VI" URL="../../Test/My Open 2.vi"/>
@@ -38,8 +45,12 @@
 		<Item Name="SDI Test Suite - MAIN.vi" Type="VI" URL="../SDI Test Suite - MAIN.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
+				<Item Name="Is Path and Not Empty.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Is Path and Not Empty.vi"/>
 				<Item Name="nismPluginAxisBaseClass.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Motion/plugins/PluginFramework/nismPluginAxisBase/nismPluginAxisBaseClass.lvclass"/>
 				<Item Name="nismSDIFramework.Binding.ctl" Type="VI" URL="/&lt;vilib&gt;/Motion/plugins/PluginFramework/nismSDIFramework.Binding.ctl"/>
+				<Item Name="TRef Traverse.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/TRef Traverse.vi"/>
+				<Item Name="TRef TravTarget.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/TRef TravTarget.ctl"/>
+				<Item Name="VI Scripting - Traverse.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/traverseref.llb/VI Scripting - Traverse.lvlib"/>
 			</Item>
 			<Item Name="Template SoftMotion Drive Interface Plug-in Class.lvclass" Type="LVClass" URL="/C/Users/mpool/Documents/LabVIEW Data/Untitled Project 3/Template SoftMotion Drive Interface Plug-in Class.lvclass"/>
 		</Item>
