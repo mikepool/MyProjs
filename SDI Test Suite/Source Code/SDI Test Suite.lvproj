@@ -10,6 +10,7 @@
 		<Property Name="IOScan.Priority" Type="UInt">9</Property>
 		<Property Name="IOScan.ReportModeConflict" Type="Bool">true</Property>
 		<Property Name="IOScan.StartEngineOnDeploy" Type="Bool">true</Property>
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.tcp.enabled" Type="Bool">false</Property>
@@ -19,6 +20,9 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="Project Documentation" Type="Folder" URL="../../Project Documentation">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="Controls" Type="Folder">
 			<Item Name="Open VI Folder Info.ctl" Type="VI" URL="../Controls/Open VI Folder Info.ctl"/>
 			<Item Name="States.ctl" Type="VI" URL="../Controls/States.ctl"/>
@@ -43,10 +47,19 @@
 			<Item Name="Check if Axis Selected.vi" Type="VI" URL="../Sub VIs/Check if Axis Selected.vi"/>
 			<Item Name="Check If Open VI Selected.vi" Type="VI" URL="../Sub VIs/Check If Open VI Selected.vi"/>
 			<Item Name="Insert Open VI.vi" Type="VI" URL="../Sub VIs/Insert Open VI.vi"/>
+			<Item Name="Get References to Controls in Front Panel Cluster.vi" Type="VI" URL="../Sub VIs/Get References to Controls in Front Panel Cluster.vi"/>
+			<Item Name="Get Suggested Troubleshooting.vi" Type="VI" URL="../Sub VIs/Get Suggested Troubleshooting.vi"/>
+			<Item Name="Write Test Results to Front Panel.vi" Type="VI" URL="../Sub VIs/Write Test Results to Front Panel.vi"/>
+			<Item Name="Pass Fail Result to Color.vi" Type="VI" URL="../Sub VIs/Pass Fail Result to Color.vi"/>
+			<Item Name="Find Control in Cluster.vi" Type="VI" URL="../Sub VIs/Find Control in Cluster.vi"/>
 		</Item>
 		<Item Name="Test" Type="Folder">
 			<Item Name="My Open 2.vi" Type="VI" URL="../../Test/My Open 2.vi"/>
 			<Item Name="My Open.vi" Type="VI" URL="../../Test/My Open.vi"/>
+		</Item>
+		<Item Name="Globals" Type="Folder">
+			<Item Name="Suggested Troubleshooting from R&amp;D.vi" Type="VI" URL="../Globals/Suggested Troubleshooting from R&amp;D.vi"/>
+			<Item Name="Pass Fail Result Colors.vi" Type="VI" URL="../Globals/Pass Fail Result Colors.vi"/>
 		</Item>
 		<Item Name="Axis 1" Type="Motion Axis">
 			<Property Name="axis.class:0" Type="Int">10551365</Property>
@@ -57,7 +70,6 @@
 			<Property Name="softmotionID:0" Type="Str">{C89C22D6-09D8-451c-B54B-BE98A931F881}</Property>
 			<Property Name="vendorID:0" Type="Int">0</Property>
 		</Item>
-		<Item Name="Get References to Controls in Front Panel Cluster.vi" Type="VI" URL="../Sub VIs/Get References to Controls in Front Panel Cluster.vi"/>
 		<Item Name="SDI Test Suite - MAIN.vi" Type="VI" URL="../SDI Test Suite - MAIN.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
