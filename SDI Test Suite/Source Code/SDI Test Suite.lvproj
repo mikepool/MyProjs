@@ -24,7 +24,22 @@
 			<Item Name="States.ctl" Type="VI" URL="../Controls/States.ctl"/>
 			<Item Name="Test Result.ctl" Type="VI" URL="../Controls/Test Result.ctl"/>
 		</Item>
+		<Item Name="Dynamically Called SubVIs" Type="Folder">
+			<Item Name="Call Open VI.vi" Type="VI" URL="../Sub VIs/Call Open VI.vi"/>
+		</Item>
 		<Item Name="SubVIs" Type="Folder">
+			<Item Name="Get Front Panel Object Types" Type="Folder">
+				<Item Name="subVI" Type="Folder">
+					<Item Name="GetArrayType.vi" Type="VI" URL="../Sub VIs/Get Front Panel Object Types/subVI/GetArrayType.vi"/>
+					<Item Name="GetClusterType.vi" Type="VI" URL="../Sub VIs/Get Front Panel Object Types/subVI/GetClusterType.vi"/>
+					<Item Name="GetDigitalType.vi" Type="VI" URL="../Sub VIs/Get Front Panel Object Types/subVI/GetDigitalType.vi"/>
+					<Item Name="GetKnobType.vi" Type="VI" URL="../Sub VIs/Get Front Panel Object Types/subVI/GetKnobType.vi"/>
+					<Item Name="GetRefNumTypes.vi" Type="VI" URL="../Sub VIs/Get Front Panel Object Types/subVI/GetRefNumTypes.vi"/>
+					<Item Name="GetRingType.vi" Type="VI" URL="../Sub VIs/Get Front Panel Object Types/subVI/GetRingType.vi"/>
+					<Item Name="GetSlideType.vi" Type="VI" URL="../Sub VIs/Get Front Panel Object Types/subVI/GetSlideType.vi"/>
+				</Item>
+				<Item Name="GetFPObjTypes.vi" Type="VI" URL="../Sub VIs/Get Front Panel Object Types/subVI/GetFPObjTypes.vi"/>
+			</Item>
 			<Item Name="Check if Axis Selected.vi" Type="VI" URL="../Sub VIs/Check if Axis Selected.vi"/>
 			<Item Name="Check If Open VI Selected.vi" Type="VI" URL="../Sub VIs/Check If Open VI Selected.vi"/>
 			<Item Name="Insert Open VI.vi" Type="VI" URL="../Sub VIs/Insert Open VI.vi"/>
@@ -42,18 +57,15 @@
 			<Property Name="softmotionID:0" Type="Str">{C89C22D6-09D8-451c-B54B-BE98A931F881}</Property>
 			<Property Name="vendorID:0" Type="Int">0</Property>
 		</Item>
-		<Item Name="Call Open VI.vi" Type="VI" URL="../Sub VIs/Call Open VI.vi"/>
+		<Item Name="Get References to Controls in Front Panel Cluster.vi" Type="VI" URL="../Sub VIs/Get References to Controls in Front Panel Cluster.vi"/>
 		<Item Name="SDI Test Suite - MAIN.vi" Type="VI" URL="../SDI Test Suite - MAIN.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
-				<Item Name="Check for Contained Data Type.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/VariantDataType/Check for Contained Data Type.vi"/>
-				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="Is Path and Not Empty.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Is Path and Not Empty.vi"/>
 				<Item Name="nismPluginAxisBaseClass.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Motion/plugins/PluginFramework/nismPluginAxisBase/nismPluginAxisBaseClass.lvclass"/>
+				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
 				<Item Name="TRef Traverse.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/TRef Traverse.vi"/>
 				<Item Name="TRef TravTarget.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/TRef TravTarget.ctl"/>
-				<Item Name="Type Specific Details.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/VariantDataType/Type Specific Details.ctl"/>
-				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 				<Item Name="VI Scripting - Traverse.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/traverseref.llb/VI Scripting - Traverse.lvlib"/>
 			</Item>
 		</Item>
