@@ -1,0 +1,9 @@
+[CompactRIO Controller]
+CompactRIO Controller = "0.0.0.0"
+
+[My Computer]
+My Computer = "10.1.128.11"
+
+[SoftMotionSDI9068]
+SoftMotionSDI9068 = "169.254.216.217"
+
